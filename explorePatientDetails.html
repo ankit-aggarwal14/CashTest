@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegacyCashPosting</title>
+    <!--Custom BOS References-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="js/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="js/bootstrap-social/bootstrap-social.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- General JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- End Custom BOS References-->
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/popper.js/umd/popper.min.js"></script>
+    <script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header ">
+        <div class="clearfix container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="clearfix">
+                        <a href="#" class="logo">
+                            <h4 class="float-left mt-3">
+                                <img src="img/logo.png">
+                                Legacy Cash Posting
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <nav id='menu'>
+
+                        <ul>
+                            <li>
+                                <a href='#' title="Cash Posting">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.384 0.0446082C8.50613 0.299962 5.77724 1.58846 3.68505 3.67991C0.752029 6.61181 -0.554208 10.7847 0.218304 14.7543C0.593148 16.6805 1.37597 18.4811 2.47881 19.9541C2.63979 20.1692 2.76661 20.3503 2.76065 20.3566C2.75468 20.363 2.57538 20.3344 2.3622 20.2932C1.89386 20.2026 1.70761 20.2303 1.48789 20.4232C1.18488 20.6892 1.14144 21.1011 1.38286 21.4176C1.44972 21.5053 1.56623 21.6014 1.64178 21.6311C1.83165 21.706 4.83197 22.2756 5.03527 22.2753C5.36227 22.275 5.71146 21.9357 5.7142 21.6157C5.71488 21.5351 5.62266 20.8007 5.50928 19.9837C5.2898 18.4026 5.2678 18.3263 4.96822 18.1043C4.87527 18.0354 4.75881 18.0049 4.58927 18.0049C4.31266 18.0049 4.14654 18.1015 3.96132 18.3703C3.85845 18.5195 3.84965 18.572 3.87687 18.8748C3.89359 19.0607 3.91949 19.2696 3.93444 19.3391L3.96166 19.4654L3.85845 19.3432C3.59483 19.0311 2.94436 18.0068 2.69838 17.5164C1.86068 15.8463 1.48955 14.2889 1.4915 12.4523C1.49409 10.0487 2.24887 7.83257 3.73852 5.85504C6.20809 2.57669 10.3926 0.906701 14.3081 1.63689C14.8477 1.73752 15.0816 1.73649 15.2821 1.63264C15.7453 1.39273 15.7583 0.638494 15.3039 0.37107C15.2261 0.325228 14.9001 0.242733 14.5797 0.187753C13.4991 0.00228546 12.4106 -0.0464883 11.384 0.0446082ZM19.6898 2.81821C19.5823 2.87583 19.476 2.994 19.4015 3.13871L19.2835 3.36792L19.5114 4.96562C19.6833 6.1708 19.7611 6.59261 19.8279 6.68248C20.1601 7.12921 20.7416 7.12829 21.0519 6.68052C21.1594 6.52536 21.1649 6.4844 21.136 6.05702L21.1051 5.59959L21.2298 5.74776C21.5245 6.09798 22.0934 7.01476 22.3917 7.61993C23.1661 9.19125 23.5225 10.7298 23.5225 12.5012C23.5225 14.7582 22.931 16.7145 21.6681 18.6346C19.3163 22.2103 14.9008 24.1185 10.6982 23.3754C10.0745 23.2651 9.85581 23.2767 9.67391 23.4298C9.2649 23.774 9.28602 24.3126 9.72078 24.6276C9.88675 24.7478 10.7786 24.9002 11.7338 24.9717C13.3451 25.0921 15.2366 24.824 16.7897 24.2549C17.4876 23.9991 18.7517 23.3643 19.3717 22.9582C20.3004 22.3499 21.0901 21.6715 21.7971 20.8746C23.4701 18.9889 24.4916 16.8215 24.8799 14.3339C25.0069 13.5201 25.0336 11.7472 24.93 11.0106C24.6037 8.69305 23.7618 6.62848 22.4449 4.91719C22.3246 4.7608 22.2439 4.63369 22.2657 4.63462C22.2874 4.63555 22.4481 4.6678 22.6228 4.70622C23.0486 4.79985 23.2034 4.79648 23.4056 4.68901C23.9281 4.41137 23.9273 3.6547 23.4042 3.40218C23.2375 3.32169 20.2233 2.72692 19.9821 2.72692C19.915 2.72692 19.7835 2.76802 19.6898 2.81821ZM11.358 4.9972C9.27629 5.32415 7.36419 6.54266 6.19944 8.28454C4.62729 10.6356 4.46607 13.5467 5.76835 16.0688C7.68812 19.7869 12.2972 21.2481 16.0155 19.3175C16.7122 18.9557 17.2271 18.5761 17.8369 17.9748C19.0973 16.7319 19.7994 15.3385 20.0626 13.5579C20.1656 12.8605 20.1308 11.7148 19.9855 11.0273C19.6827 9.59341 19.0035 8.31274 17.9889 7.26258C16.8025 6.03454 15.4288 5.30206 13.7855 5.02114C13.1378 4.9104 11.9831 4.89901 11.358 4.9972ZM13.5141 6.4672C15.7407 6.85148 17.5722 8.39005 18.3116 10.4975C18.5758 11.2504 18.6393 11.6573 18.6361 12.5745C18.6336 13.2652 18.6142 13.4836 18.5213 13.8696C18.126 15.511 17.2175 16.8159 15.8434 17.7159C13.7885 19.0619 11.1438 19.0291 9.05647 17.6317C8.05099 16.9586 7.14203 15.7836 6.72207 14.6141C6.3699 13.6335 6.27285 12.294 6.48397 11.3283C7.01027 8.92065 8.79789 7.08249 11.1381 6.54256C11.6946 6.41418 11.7511 6.40807 12.4634 6.39961C12.8306 6.39526 13.2557 6.42258 13.5141 6.4672ZM12.2923 7.71196C11.9432 7.82031 11.7734 8.12805 11.7734 8.65244V9.00969L11.4387 9.06242C10.9948 9.13231 10.61 9.31484 10.3047 9.6005C9.04459 10.7791 9.63271 12.873 11.3237 13.2287C11.4662 13.2586 12.0006 13.2832 12.5113 13.2832C13.5435 13.2832 13.6563 13.3096 13.8279 13.591C14.0398 13.9384 13.8899 14.3862 13.5137 14.5299C13.3383 14.5969 13.1447 14.6077 12.355 14.5943L11.4068 14.5783L11.1189 14.4194C10.7781 14.2314 10.6387 14.2227 10.3567 14.3718C10.0072 14.5566 9.87707 14.9326 10.0333 15.3064C10.1682 15.6294 10.741 15.9383 11.3768 16.031L11.7734 16.0887V16.4583C11.7734 16.7241 11.7988 16.8757 11.8639 16.9982C12.1325 17.5036 12.8437 17.5238 13.142 17.0345C13.2176 16.9105 13.2392 16.7881 13.2393 16.482L13.2395 16.0887L13.5907 16.0285C14.3211 15.9033 14.8997 15.4674 15.2072 14.8108C15.4056 14.387 15.4525 13.7437 15.3155 13.3249C15.0744 12.5878 14.4868 12.0337 13.7715 11.8688C13.6536 11.8416 13.1283 11.8188 12.6042 11.8181C11.5343 11.8167 11.4042 11.7854 11.2001 11.4799C10.9982 11.1777 11.1072 10.7622 11.4343 10.5868C11.5786 10.5094 11.7213 10.4976 12.5057 10.4986C13.4812 10.4997 13.6783 10.5408 13.8992 10.7888C14.0452 10.9528 14.2364 11.0351 14.4711 11.0349C15.0154 11.0344 15.3521 10.4781 15.113 9.97427C14.9383 9.60602 14.1843 9.15846 13.5777 9.06296L13.2395 9.00969V8.624C13.2395 8.04653 13.0452 7.7622 12.6042 7.69451C12.5101 7.68009 12.3698 7.68796 12.2923 7.71196Z"
+                                            fill="#001950" />
+                                    </svg> Cash Posting
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href='#' title="Legacy Archive">
+                                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.25274 0.117906C6.1248 0.22774 6.1138 0.266928 6.091 0.692759L6.06654 1.14971L5.47945 1.17417C4.98611 1.19472 4.85333 1.21781 4.64775 1.31884C4.109 1.58361 4.11365 1.57593 2.14105 5.47945C1.14163 7.45719 0.251027 9.22945 0.161986 9.41781L0 9.76027V13.9677V18.1751L0.138307 18.4744C0.303278 18.8314 0.586399 19.1212 0.954012 19.3094L1.22309 19.4472H12.5H23.7769L24.0602 19.3037C24.4053 19.129 24.6962 18.8232 24.8699 18.4528L25 18.1751V13.9677V9.76027L24.838 9.41781C24.749 9.22945 23.8625 7.46551 22.8682 5.4979C21.638 3.06331 20.9998 1.85152 20.8705 1.7047C20.7661 1.58606 20.5517 1.42363 20.3941 1.34379C20.1367 1.21341 20.0479 1.19614 19.5205 1.17417L18.9335 1.14971L18.909 0.692759C18.8862 0.266928 18.8752 0.22774 18.7473 0.117906L18.61 0H12.5H6.39002L6.25274 0.117906ZM17.9305 2.03033V3.08219H12.5H7.06947V2.03033V0.978474H12.5H17.9305V2.03033ZM6.091 2.6615V3.07246L5.64643 3.08958C5.22984 3.10558 5.19442 3.11531 5.08381 3.24393L4.96575 3.38121V4.7728V6.16438L4.61106 6.16458C4.1657 6.16477 3.96849 6.26815 3.89271 6.541C3.86429 6.6433 3.84095 7.11781 3.8408 7.5954L3.84051 8.4638H2.83371H1.82691L2.33787 7.47309C2.61888 6.92823 3.30749 5.57128 3.86805 4.45768C4.70597 2.7931 4.9138 2.41678 5.03655 2.34193C5.15372 2.2705 5.28346 2.25083 5.63845 2.25068L6.091 2.25049V2.6615ZM19.9635 2.34193C20.0862 2.41678 20.294 2.7931 21.1319 4.45768C21.6925 5.57128 22.3811 6.92818 22.6621 7.47309L23.1731 8.4638H22.1663H21.1595L21.1592 7.5954C21.159 7.11781 21.1357 6.6433 21.1073 6.541C21.0315 6.26815 20.8343 6.16477 20.3889 6.16458L20.0342 6.16438V4.7728V3.38121L19.9162 3.24393C19.8056 3.11531 19.7702 3.10558 19.3536 3.08958L18.909 3.07246V2.6615V2.25049L19.3615 2.25068C19.7165 2.25083 19.8463 2.2705 19.9635 2.34193ZM19.1047 5.11252V6.16438H12.5H5.8953V5.11252V4.06067H12.5H19.1047V5.11252ZM20.181 7.80333V8.4638H18.8573C18.0349 8.4638 17.4503 8.48474 17.3138 8.51913C16.9019 8.62285 16.7068 8.868 16.2677 9.83366L15.8784 10.6898H12.5H9.12158L8.73229 9.83366C8.2932 8.868 8.09809 8.62285 7.68615 8.51913C7.54966 8.48474 6.96507 8.4638 6.14271 8.4638H4.81898V7.80333V7.14286H12.5H20.181V7.80333ZM7.81067 10.4207C8.23131 11.3602 8.4271 11.615 8.81844 11.7322C9.09667 11.8156 15.9033 11.8156 16.1816 11.7322C16.5729 11.615 16.7687 11.3602 17.1893 10.4207L17.5727 9.56458L20.5036 9.55196C23.267 9.54007 23.4441 9.54447 23.602 9.62916C23.694 9.67852 23.8096 9.79393 23.8588 9.88562C23.9432 10.0431 23.9481 10.2687 23.9481 13.9563C23.9481 18.2574 23.9588 18.1051 23.6453 18.2962C23.4841 18.3945 23.43 18.395 12.5098 18.3951C0.384198 18.3953 1.35161 18.4215 1.14775 18.0871C1.05509 17.9352 1.0522 17.812 1.05205 13.9914C1.05186 10.2697 1.0568 10.0431 1.14124 9.88562C1.19041 9.79393 1.30597 9.67852 1.39804 9.62916C1.55587 9.54447 1.73297 9.54007 4.49638 9.55196L7.42735 9.56458L7.81067 10.4207ZM9.35626 13.6117C9.02055 13.8063 8.9775 13.9747 8.9775 15.093C8.9775 16.2185 9.0204 16.3834 9.36331 16.5761C9.55294 16.6827 9.5613 16.683 12.5 16.683C15.4387 16.683 15.4471 16.6827 15.6367 16.5761C15.9801 16.3831 16.0225 16.2193 16.0225 15.0852C16.0225 14.1602 16.0163 14.0936 15.9112 13.895C15.694 13.4841 15.8566 13.5028 12.5008 13.5041C9.54922 13.5052 9.53953 13.5055 9.35626 13.6117ZM15.044 15.093V15.7045H12.5H9.95597V15.093V14.4814H12.5H15.044V15.093Z"
+                                            fill="#001950" />
+                                    </svg>
+                                    Legacy Archive
+                                </a>
+                            </li>
+                            <li id="parentmenu_nav">
+                                <a class='prett active' href='#' title="Admin">
+                                    <svg width="25" height="26" viewBox="0 0 25 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.9589 0.0296189C10.7153 0.0914095 10.4093 0.268807 10.22 0.458141C9.90347 0.774678 9.82353 1.0305 9.67857 2.19072C9.6066 2.767 9.52774 3.26484 9.50333 3.29713C9.47886 3.32937 9.37813 3.38109 9.27935 3.41196C9.18063 3.44288 8.87304 3.56788 8.59589 3.6898L8.09198 3.91137L7.91096 3.76807C7.06262 3.0963 6.42211 2.62169 6.23777 2.5282C5.93723 2.3758 5.46218 2.34513 5.08439 2.45369C4.8045 2.53412 4.75548 2.57605 3.66101 3.67052C2.56654 4.76499 2.52461 4.81401 2.44418 5.0939C2.33532 5.47262 2.36624 5.94708 2.51932 6.24728C2.58107 6.36837 2.88919 6.79767 3.20406 7.20129C3.98009 8.19601 3.92818 8.08065 3.75558 8.42683C3.67578 8.58691 3.54931 8.88304 3.47456 9.08485C3.3998 9.28666 3.31394 9.47571 3.28381 9.50491C3.25362 9.53417 2.75568 9.61758 2.17715 9.69038C1.01365 9.83676 0.763258 9.91484 0.448288 10.2298C0.349706 10.3284 0.208513 10.5239 0.13454 10.6643L0 10.9195V12.485V14.0506L0.12818 14.3239C0.198679 14.4742 0.339873 14.6807 0.441928 14.7828C0.764628 15.1055 1.02647 15.1895 2.1362 15.3261C2.68341 15.3935 3.17524 15.4669 3.22921 15.4892C3.2884 15.5137 3.36375 15.634 3.41937 15.7931C3.47001 15.938 3.59951 16.2487 3.70714 16.4837C3.84227 16.7787 3.88821 16.9301 3.85553 16.973C3.8295 17.0071 3.54344 17.3762 3.21986 17.7933C2.89628 18.2103 2.58107 18.6507 2.51932 18.7717C2.36624 19.0719 2.33532 19.5464 2.44418 19.9251C2.52461 20.205 2.56654 20.254 3.66101 21.3485C4.75548 22.443 4.8045 22.4849 5.08439 22.5653C5.46218 22.6739 5.93723 22.6432 6.23777 22.4908C6.42211 22.3973 7.06262 21.9227 7.91096 21.2509L8.09198 21.1077L8.59589 21.3292C8.87304 21.4511 9.18063 21.5761 9.27935 21.6071C9.37813 21.6379 9.47886 21.6896 9.50333 21.7219C9.52774 21.7542 9.6066 22.252 9.67857 22.8283C9.82417 23.9936 9.90303 24.2439 10.2267 24.5676C10.3288 24.6696 10.5353 24.8108 10.6856 24.8813L10.9589 25.0095H12.5H14.0411L14.3144 24.8813C14.4647 24.8108 14.6712 24.6696 14.7733 24.5676C15.1004 24.2404 15.1814 23.9835 15.323 22.8224C15.3929 22.2494 15.4743 21.7559 15.5039 21.7257C15.5335 21.6956 15.7228 21.6097 15.9247 21.535C16.1265 21.4602 16.4226 21.3337 16.5827 21.2539C16.9289 21.0813 16.8135 21.0294 17.8082 21.8055C18.2118 22.1203 18.6411 22.4284 18.7622 22.4902C19.0624 22.6433 19.5369 22.6742 19.9156 22.5653C20.1955 22.4849 20.2445 22.443 21.339 21.3485C22.4335 20.254 22.4754 20.205 22.5558 19.9251C22.6645 19.547 22.6338 19.0718 22.4813 18.7733C22.3923 18.599 21.9317 17.9781 21.147 16.9745C21.1145 16.9329 21.169 16.7564 21.3205 16.4119C21.442 16.1357 21.5666 15.8289 21.5976 15.7302C21.6284 15.6314 21.6801 15.5306 21.7124 15.5062C21.7447 15.4818 22.2425 15.4029 22.8188 15.3309C23.9841 15.1853 24.2344 15.1065 24.5581 14.7828C24.6601 14.6807 24.8013 14.4742 24.8718 14.3239L25 14.0506V12.5095V10.9684L24.8718 10.6951C24.8013 10.5448 24.6601 10.3383 24.5581 10.2362C24.2352 9.91333 23.9798 9.83231 22.8026 9.67913C22.2199 9.6033 21.7248 9.52111 21.7025 9.4965C21.6802 9.47189 21.6006 9.28666 21.5257 9.08485C21.4508 8.88304 21.3242 8.58691 21.2444 8.42683C21.0718 8.08065 21.0199 8.19601 21.7959 7.20129C22.1108 6.79767 22.4189 6.36837 22.4807 6.24728C22.6338 5.94708 22.6647 5.47262 22.5558 5.0939C22.4754 4.81401 22.4335 4.76499 21.339 3.67052C20.2445 2.57605 20.1955 2.53412 19.9156 2.45369C19.5369 2.34483 19.0624 2.37575 18.7622 2.52884C18.6411 2.59058 18.2118 2.8987 17.8082 3.21357C16.8135 3.9896 16.9289 3.93769 16.5827 3.76509C16.4226 3.68529 16.1265 3.55883 15.9247 3.48407C15.7228 3.40932 15.5338 3.32345 15.5045 3.29332C15.4751 3.26313 15.3925 2.767 15.3208 2.19072C15.1759 1.02526 15.0972 0.775363 14.7733 0.451439C14.6712 0.349384 14.4647 0.20819 14.3144 0.137691L14.0411 0.00951126L12.5734 0.000949621C11.7661 -0.00369813 11.0396 0.0091688 10.9589 0.0296189ZM13.8652 1.07434C14.1299 1.21039 14.1614 1.31665 14.3329 2.64914C14.4582 3.62199 14.516 3.93818 14.5863 4.03221C14.651 4.1189 14.8477 4.21416 15.2675 4.3621C15.5921 4.47649 16.0962 4.68598 16.3876 4.82761C16.8537 5.05413 16.9359 5.07947 17.0704 5.03818C17.1544 5.0124 17.6732 4.64092 18.2233 4.21274C19.5712 3.16338 19.3547 3.14635 20.609 4.40056C21.863 5.65462 21.847 5.43202 20.7822 6.80682C20.346 7.37003 19.9752 7.89425 19.9582 7.97169C19.9341 8.08128 19.984 8.22796 20.1832 8.63387C20.324 8.92062 20.5247 9.39493 20.6292 9.68789C20.8588 10.3316 20.8875 10.3877 21.0245 10.461C21.0835 10.4926 21.692 10.5905 22.3767 10.6787C23.6918 10.8479 23.7994 10.8801 23.9352 11.1443C24.0206 11.3106 24.0206 13.7084 23.9352 13.8747C23.7994 14.1389 23.6915 14.1712 22.3745 14.3416C21.6886 14.4303 21.0801 14.5282 21.0223 14.5592C20.8875 14.6313 20.8584 14.6886 20.627 15.3372C20.5213 15.6334 20.3196 16.1112 20.1788 16.3988C19.9518 16.8625 19.9282 16.9394 19.9705 17.0772C19.9967 17.1627 20.3686 17.6827 20.7968 18.2328C21.8461 19.5807 21.8632 19.3643 20.609 20.6185C19.3549 21.8725 19.5775 21.8565 18.2027 20.7918C17.6395 20.3555 17.1153 19.9847 17.0378 19.9677C16.9282 19.9437 16.7816 19.9935 16.3756 20.1927C16.0889 20.3335 15.6114 20.535 15.3146 20.6407C15.0178 20.7463 14.7263 20.8642 14.6669 20.9028C14.5157 21.0009 14.4747 21.1847 14.314 22.4843C14.1644 23.6948 14.1294 23.8089 13.8652 23.9447C13.6989 24.0302 11.3011 24.0302 11.1348 23.9447C10.8691 23.8081 10.8377 23.7021 10.6682 22.3714C10.543 21.3881 10.4877 21.0858 10.4153 20.9889C10.3487 20.8997 10.1574 20.8067 9.73371 20.6574C9.40974 20.5432 8.90939 20.3346 8.62177 20.1937C8.21135 19.9928 8.0681 19.9444 7.95612 19.969C7.87759 19.9863 7.38777 20.3314 6.86761 20.736C6.3475 21.1406 5.85822 21.5045 5.78038 21.5448C5.49511 21.6923 5.39961 21.6283 4.37818 20.6059C3.13938 19.3659 3.15411 19.5856 4.21776 18.2122C4.65396 17.649 5.02427 17.127 5.0407 17.0524C5.06331 16.9494 5.00949 16.791 4.81835 16.3976C4.67965 16.1122 4.47857 15.6325 4.37153 15.3316C4.26448 15.0306 4.1453 14.7358 4.10675 14.6764C4.00856 14.5252 3.82485 14.4842 2.5252 14.3236C1.31473 14.1739 1.20059 14.1389 1.06482 13.8747C0.979354 13.7084 0.979354 11.3106 1.06482 11.1443C1.20059 10.8802 1.31473 10.8451 2.5252 10.6955C3.82485 10.5349 4.00856 10.4939 4.10675 10.3426C4.1453 10.2832 4.26326 9.9917 4.36884 9.69493C4.47446 9.39811 4.6773 8.91807 4.81962 8.6281C5.05044 8.1578 5.07314 8.08402 5.03009 7.94366C5.00352 7.85711 4.63141 7.33627 4.20323 6.78622C3.15387 5.43833 3.13684 5.65477 4.39105 4.40056C5.64525 3.14635 5.42882 3.16338 6.77671 4.21274C7.32676 4.64092 7.84662 5.01274 7.93195 5.03891C8.06981 5.08123 8.14897 5.05633 8.64237 4.81563C8.9478 4.66661 9.42882 4.46431 9.71135 4.36607C9.99388 4.26783 10.2737 4.15565 10.3331 4.1168C10.4844 4.01783 10.5254 3.83407 10.686 2.53471C10.8356 1.32424 10.8706 1.2101 11.1348 1.07434C11.3011 0.988865 13.6989 0.988865 13.8652 1.07434ZM11.9054 7.32248C10.0968 7.55061 8.55959 8.66758 7.77872 10.321C6.83845 12.3118 7.27779 14.6971 8.86815 16.2359C10.4396 17.7563 12.7422 18.1534 14.676 17.2374C15.8406 16.6857 16.6763 15.8519 17.2213 14.6981C18.4893 12.0132 17.2292 8.82898 14.4409 7.67218C13.7207 7.37341 12.6607 7.22717 11.9054 7.32248ZM13.3329 8.42037C14.4145 8.64968 15.3489 9.28402 15.9677 10.2092C16.443 10.9197 16.6592 11.6472 16.6577 12.5307C16.6552 13.9411 15.9873 15.1779 14.7953 15.9792C14.3388 16.286 13.7327 16.5316 13.2046 16.6235C13.0121 16.6571 12.6319 16.6708 12.2846 16.6568C11.572 16.6281 10.9916 16.4563 10.3732 16.0911C9.90837 15.8166 9.27627 15.2102 8.98557 14.76C8.7478 14.3917 8.50783 13.7998 8.41086 13.3424C8.32397 12.9326 8.32397 12.0864 8.41086 11.6766C8.75597 10.0488 10.0152 8.78172 11.6438 8.42336C12.0335 8.33764 12.935 8.33603 13.3329 8.42037Z"
+                                            fill="black" />
+                                    </svg>
+                                    Admin
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <div class="main-menu">
+                        <ul class="p-l-0">
+                            <li>
+                                <div class="user-icon dropdown float-right">
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                        <li><a class="dropdown-item" href="/Profile/Index"><i class="fa fa-user"
+                                                    aria-hidden="true"></i> Profile</a></li>
+                                        <li><a class="dropdown-item" href="/Auth/SignOut"><i class="fa fa-sign-out"
+                                                    aria-hidden="true"></i> Sign out</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="main-menuSub">
+                            <li> <a><span id="user_displayname">Welcome, </span></a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid light-blue mt-60" style="padding-bottom: 80px !important;">
+        <div class="row">
+            <div class="col-md-3">
+                <h4> Explore Patient Details</h4>
+            </div>
+            <div class="col-md-6 text-center">
+                <h5 class="locationText"> Location: TRAIN-WCH</h5>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-primary btn-small float-right " href="#">
+                    Return to Balance Management
+                </a>
+            </div>
+        </div>
+        <div class="cardLegacy mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="leftDetailsWrap h-100">
+                        <span class="lefticon">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </span>
+                        <div class="leftDetails">
+                            <div class="row mt-4">
+                                <div class="col-md-12 mt-2"><h5> TATUM AMEST </h5></div>
+                                <div class="col-md-12 mt-2">
+                                    <p> DOB :</p>
+                                <p> Account # : 160296539</p>
+                                <p> MED REC # : 418137</p>
+                                <p> Admit Date : 06-12-2019 </p>
+                                <p> Discharge Date : </p>
+                                <p> Current Balance : $1,488.00 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <ul class="nav nav-tabs explorePatientTabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="AccountInquiry-tab" data-bs-toggle="tab" data-bs-target="#AccountInquiry" type="button" role="tab" aria-controls="AccountInquiry" aria-selected="true">Account Inquiry</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="TransactionSummary-tab" data-bs-toggle="tab" data-bs-target="#TransactionSummary" type="button" role="tab" aria-controls="charges" aria-selected="true">Transaction Summary</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="TransactionDetails-tab" data-bs-toggle="tab" data-bs-target="#TransactionDetails" type="button" role="tab" aria-controls="roombeds" aria-selected="false">Transaction Details</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="Statement-tab" data-bs-toggle="tab" data-bs-target="#Statement" type="button" role="tab" aria-controls="Statement" aria-selected="false">Statement</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content tabContentstyle" id="myTabContent">
+                        <div class="tab-pane fade show active" id="AccountInquiry" role="tabpanel" aria-labelledby="AccountInquiry-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-4 tabsborder pr-0">
+                                    <p> legacy : 1546234</p>
+                                    <p> Account : 1546234</p>
+                                    <p> M : 1546234</p>
+                                    <p> P-VIP : 1546234</p>
+                                    <p> G-VIP : 1546234</p>
+                                    <p> PRes USA total charges : 1546234</p>
+                                    <p> Pat ssn : 1546234</p>
+                                    <p> Grntr ssn : 1546234</p>
+                                    <p> PRes USA bal pmts-adjs : 1546234</p>
+                                    <p> Patient (name) : Jhon Doe</p>
+                                    <p> Guarntr (name) : 7466484</p>
+                                    <p> date displayed??? : 7466484</p>
+                                    <p> sys medicaid all : 7466484</p>
+                                    <p> Address : 2464 Royal Ln. Mesa, New Jersey 45463</p>
+                                    <p> CFDEM : 7466484</p>
+                                    <p> Phone : 1546234</p>
+                                </div>
+                                <div class="col-md-4 tabsborder pl-25" >
+                                    <p> Pat type : 1546234</p>
+                                    <p> Admit (date) : 06-12-2019</p>
+                                    <p> Fin class : 1546234</p>
+                                    <p> DSC (date) : 09-12-2019</p>
+                                    <p> # DM sent : 1546234</p>
+                                    <p> Birth (date) : 01-01-1990</p>
+                                    <p> Last DM (date) : 01-01-1990</p>
+                                    <p> Death (date) : 01-01-1990</p>
+                                    <p> Last DM msg db : 1546234</p>
+                                    <p> PP xfer : 1546234</p>
+                                    <p> BD xfer : 1546234</p>
+                                    <p> No interest : 1546234</p>
+                                    <p> Col code : #1546234</p>
+                                    <p> Lst bill : #1546234</p>
+                                    <p> Transact : 1546234</p>
+                                    <p> Status : Active</p>
+                                    <p> At dctr : 1546234</p>
+                                </div>
+                                <div class="col-md-4 pl-25">
+                                    <p> Balance : $1,45,114.246</p>
+                                    <p> Ins #1 (id, name, date, #) : 1546234</p>
+                                    <p> Ins #2 (id, name, date, #) : 1546234</p>
+                                    <p> Ins #3 (id, name, date, #) : 1546234</p>
+                                    <p> Ins #4 (id, name, date, #) : 1546234</p>
+                                    <p> New acct# : 1546234</p>
+                                    <p> Start : 1546234</p>
+                                    <p> Dept : 1546234</p>
+                                    <p> Revisions : 1546234</p>
+                                    <p> Notes : Amet minim</p>
+                                    <p> Insurance Plan 1 Subscriber Id : 1546234</p>
+                                    <p> Insurance Plan 2 Subscriber Id : 1546234</p>
+                                    <p> Insurance Plan 3 Subscriber Id : 1546234</p>
+                                    <p> Insurance Plan 4 Subscriber Id : 1546234</p>
+                                    <p> date displayed??? : 1546234</p>
+                                    <p> Payment healthy : 1546234</p>
+                                    <p> CFACT : 1546234</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="TransactionSummary" role="tabpanel" aria-labelledby="TransactionSummary-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-4 tabsborder pr-0">
+                                    <p> Account # : 1546234</p>
+                                    <p> Claim # : 1546234</p>
+                                    <p> Patient Name : Albert Flores</p>
+                                    <p> Payer : 1546234</p>
+                                    <p> Internal Control # : 1546234</p>
+                                    <p> Health Insurance # : 1546234</p>
+                                    <p> Bill Type : 1546234</p>
+                                    <p> Claim Sts : 1546234</p>
+                                    <p> Payment amt : 1546234</p>
+                                </div>
+                                <div class="col-md-4 tabsborder pl-25" >
+                                    <p> Contractual adj amt : 1546234</p>
+                                    <p> Reimb Rate : 1546234</p>
+                                    <p> Payment date : 06-12-2019</p>
+                                    <p> From date : 01-01-1990</p>
+                                    <p> Through date : 09-12-2019</p>
+                                    <p> Total charges : 1546234</p>
+                                    <p> Cvrd days : 1546234</p>
+                                    <p> Deductible : 1546234</p>
+                                    <p> DRG/amount : 1546234</p>
+                                </div>
+                                <div class="col-md-4 pl-25">
+                                    <p> Capital amount : 1546234</p>
+                                    <p> Professional component : 1546234</p>
+                                    <p> Creation date : 09-12-2019</p>
+                                    <p> Non-crvd amt : 1546234</p>
+                                    <p> Non-crvd days : 1546234</p>
+                                    <p> Co-insurance : 1546234</p>
+                                    <p> Outlier Typ/amt : 1546234</p>
+                                    <p> D/S amount : 1546234</p>
+                                    <p> Denied amount : 1546234</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show " id="TransactionDetails" role="tabpanel" aria-labelledby="TransactionDetails-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-4 tabsborder pr-0">
+                                    <p> Account (Name) : Albert Flores</p>
+                                    <p> Account # : 1546234</p>
+                                    <p> Seq # : 1546234</p>
+                                </div>
+                                <div class="col-md-4 tabsborder pl-25" >
+                                    <p> Charge : 4561</p>
+                                    <p> Bat : 354</p>
+                                    <p> Date : 06-12-2019</p>
+                                </div>
+                                <div class="col-md-4 pl-25">
+                                    <p> Qty : 324</p>
+                                    <p> Amount : 1546234</p>
+                                    <p> <div class="float-left" style="width: 50%;"><p>Charge Description :</p> </div> <div class="float-left" style="width: 50%;"><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p></div> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show statementtabInput" id="Statement" role="tabpanel" aria-labelledby="Statement-tab">
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="main-head">PROVIDER INFORMATION</div>
+                                    <div class="clearfix">
+                                        <div class="PN float-left" style="width: 14%;">PROVIDER NAME</div>
+                                        <div class="float-left" style="width:28%"><input type="text" class="form-control mt-0 " value="ST FRANCIS MEDICAL CENTER" ></div>
+                                        <div class="PN float-left" style="width: 14%;">SIG ON FILE <input type="checkbox"  class="ml-3 mt-0"> </div>
+                                        <div class="PN float-left" style="width:10%">TAXANOMY</div>
+                                        <div class="float-left" style="width:14.5%"><input type="text" value="282N000000" class="form-control mt-0 float-left"></div>
+                                        <div class="PN float-left" style="width:7.5%">4 TOB</div>
+                                        <div class="float-left" style="width:12%"><input type="text" value="131" class="form-control mt-0 float-left"></div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="PN float-left" style="width: 10%;">ADDRESS 1</div>
+                                        <div class="float-left" style="width:90%"><input type="text" value="309 JACKSON STREET" class="form-control mt-0" ></div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="PN float-left" style="width:10%">ADDRESS 2</div>
+                                        <div class="float-left" style="width:18%"><input type="text" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width:6%">CITY</div>
+                                        <div class="float-left" style="width:12%"><input type="text" value="MONROE" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width: 5%">ST</div>
+                                        <div class="float-left" style="width:8%"><input type="text" value="LA" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width:6%">ZIP</div>
+                                        <div class="float-left" style="width:8%"><input type="text" value="712101901" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width: 5%">CC</div>
+                                        <div class="float-left" style="width:8%"><input type="text" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width: 6%">CSC</div>
+                                        <div class="float-left" style="width:8%"><input type="text" class="form-control mt-0" ></div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="PN float-left" style="width:22%">FED TAX NO <input type="radio" name="a" id="" class="ml-2 mt-0 mr-1">SSN  <input type="radio" name="a" id="" checked class="mt-0 ml-2 mr-1">EIN</div>
+                                        <div class="float-left" style="width:12%"><input type="text" value="720408970" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width:5%">NPI</div>
+                                        <div class="float-left" style="width:11%"><input type="text" value="720408970" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width: 8%">SVC CD</div>
+                                        <div class="float-left" style="width:10%"><input type="text" value="720408970" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width:8%">XM ID</div>
+                                        <div class="float-left" style="width:8%"><input type="text" value="6000" class="form-control mt-0" ></div>
+                                        <div class="PN float-left" style="width: 8%">AASG</div>
+                                        <div class="float-left" style="width:8%"><input type="text" value="A" class="form-control mt-0" ></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 flex mt-4">
+                                    <div class="main-head w-100">PATIENT INFORMATION</div>
+                                    <div class="main-head w-100">VISIT INFORMATION</div>
+                                </div>
+                                <div class="col-md-6 pr-0" style="border-right: 5px solid #04397d">
+                                    <div class="PN float-left" style="width:28%">PROVIDER NAME</div>
+                                    <div class="float-left" style="width:72%"><input type="text" value="44493161" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">DUMMY TEXT</div>
+                                    <div class="float-left" style="width:52%"><input type="text" value=" SMITH" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">SFX</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">FIRST NAME</div>
+                                    <div class="float-left" style="width:44%"><input type="text" value=" JHON" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:18%">M NAME/</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">ADDRESS 1</div>
+                                    <div class="float-left" style="width:72%"><input type="text" value=" 2401 JONESBORO RD" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">ADDRESS 2</div>
+                                    <div class="float-left" style="width:72%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">CITY</div>
+                                    <div class="float-left" style="width:52%"><input type="text" value=" WEST MONROE" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">ST</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">DUMMY TEXT</div>
+                                    <div class="float-left" style="width:32%"><input type="text" value=" 71292" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">CC</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">CSC</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">DUMMY TEXT</div>
+                                    <div class="float-left" style="width:72%"><input type="text" value=" 59  59  56" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">BIRTHDATE</div>
+                                    <div class="float-left" style="width:32%"><input type="text" value=" 11-13-1974" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">SFX</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">MS</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:28%">UB92FL11L</div>
+                                    <div class="PN float-left" style="width:17%">UB92FL11L</div>
+                                    <div class="PN float-left" style="width:15%">THCIS</div>
+                                    <div class="PN float-left" style="width:18%">2SSN</div>
+                                    <div class="PN float-left" style="width:22%">NO SSN</div>
+                                    <div class="float-left" style="width:28%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:17%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:15%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:18%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:22%"><input type="text" class="form-control mt-0 " ></div>
+                                </div>
+                                <div class="col-md-6 pl-0">
+                                    <div class="PN float-left" style="width:50%;text-align: center;">6 STATEMENT FORM</div>
+                                    <div class="PN float-left" style="width:50%;text-align: center;">6 STATEMENT FORM</div>
+                                    <div class="float-left" style="width:50%"><input type="text" value=" 11-13-1974" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:50%"><input type="text" value=" 11-13-1974" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:100%;text-align: center;">ADMISSION</div>
+                                    <div class="PN float-left" style="width:40%;text-align: center;">12 DATE</div>
+                                    <div class="PN float-left" style="width:20%;text-align: center;">13 HR</div>
+                                    <div class="PN float-left" style="width:20%;text-align: center;">14 TYPE</div>
+                                    <div class="PN float-left" style="width:20%;text-align: center;">15 SRC</div>
+                                    <div class="float-left" style="width:40%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:15%;text-align: center;">16 D HR</div>
+                                    <div class="float-left" style="width:15%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:35%;text-align: center;">17 Stat</div>
+                                    <div class="float-left" style="width:35%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:30%;text-align: center;">DISCHARGE DATE</div>
+                                    <div class="float-left" style="width:70%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:30%;text-align: center;">DELAY ASN CD</div>
+                                    <div class="float-left" style="width:70%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:30%;text-align: center;">DUMMY NAME</div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:30%;text-align: center;">DUMMY NAME</div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:30%;text-align: center;">DUMMY NAME</div>
+                                    <div class="float-left" style="width:70%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">COS</div>
+                                    <div class="float-left" style="width:14%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">SPI</div>
+                                    <div class="float-left" style="width:15%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">SPEC</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:17%;text-align: center;">ACDT ST</div>
+                                    <div class="float-left" style="width:14%"><input type="text" class="form-control mt-0 " ></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="PN float-left" style="width:17%;text-align: center;">ACCOUNT NUMBER</div>
+                                    <div class="float-left" style="width:23%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">EPS001111</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">EPS001111</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%;text-align: center;">EPS001111</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="main-head">RESPONSIBLE PARTY</div>
+                                    <div class="PN float-left" style="width:22%;text-align: center;">USE RESPONSIBLE DATA <input type="checkbox" class="ml-3 mt-0"></div>
+                                    <div class="PN float-left" style="width:14%;text-align: center;">NAME <span class="ml-2" style="color:#979797">ORG</span> <input type="checkbox" class="ml-2 mt-0"></div>
+                                    <div class="float-left" style="width:18%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:6%;text-align: center;">FIRST</div>
+                                    <div class="float-left" style="width:13%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">MI</div>
+                                    <div class="float-left" style="width:12%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">ADDRESS 1</div>
+                                    <div class="float-left" style="width:40%"><input type="text" value="309 JACKSON STREET" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:10%">ADDRESS 2</div>
+                                    <div class="float-left" style="width:40%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">CITY</div>
+                                    <div class="float-left" style="width:20%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">ST</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">ZIP</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">CC</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">TEL</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                    <div class="PN float-left" style="width:5%;text-align: center;">FAX</div>
+                                    <div class="float-left" style="width:10%"><input type="text" class="form-control mt-0 " ></div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="main-head">CODES</div>
+                                    <div class="PN float-left" style="width:20%;text-align: center;">10-20 CONDITION</div>
+                                    <div class="PN float-left" style="width:1%;text-align: center;background-color: #FFFFFF;border-right: none;"></div>
+                                    <div class="PN float-left" style="width:19%;text-align: center;">31-34 OCCURRENCES</div>
+                                    <div class="PN float-left" style="width:1%;text-align: center;background-color: #FFFFFF;border-right: none;"></div>
+                                    <div class="PN float-left" style="width:56.4%;text-align: center;">34-36 OCCURRENCES SPAN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="footer-copyright">
+        <div class="simple-footer">
+            <!-- @(appconfig!=null && !string.IsNullOrEmpty(appconfig.Name) ? appconfig.Name :
+            Configuration.GetSection("ApplicationName").Value) &copy; @DateTime.UtcNow.Year -->
+        </div>
+    </div>
+    <div class="footer">
+        <div class="qodex-logo">
+            <img src="img/qodex_logo.png" />
+        </div>
+    </div>
+</body>
+
+</html>

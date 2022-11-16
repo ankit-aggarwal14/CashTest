@@ -1,0 +1,1193 @@
+.bars {
+    background: #fff;
+    color: blue;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 0 !important;
+    border-radius: 50%;
+    position: absolute;
+    left: 238px;
+    box-shadow: 0 0 2px 2px #dedede;
+    z-index: 999;
+    top: 18px;
+}
+
+.sidebar-mini .bars {
+    left: 52px;
+}
+
+.bars i {
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 8px;
+    margin-left: 0 !important;
+}
+
+.left-profile {
+    position: absolute;
+    bottom: 10px;
+}
+
+    .left-profile .dropdown-toggle::after {
+        content: '';
+        display: none;
+    }
+
+.profile-nm {
+    display: inline-block;
+}
+
+.sidebar-mini .profile-nm {
+    display: none;
+}
+
+.login-brand {
+    width: 80px;
+    height: 80px;
+    /*border-radius: 50%;
+    box-shadow: 1px 3px 8px 2px #dedede;
+    background: #fff;
+    margin: 30px auto;*/
+}
+
+    .login-brand .logo-big {
+        padding-top: 28px;
+        text-align: center;
+    }
+
+.nav-item.dropdown.active .dropdown-menu {
+    display: block !important
+}
+
+.app-name {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    .bars {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .navbar-bg, .navbar {
+        display: none;
+    }
+}
+
+.logout_div {
+    position: absolute;
+    width: 450px;
+    min-height: 100px;
+    height: auto;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    color: #383838;
+    padding: 20px;
+    z-index: 9999;
+    margin-left: -200px;
+    margin-top: -50px;
+    /*border: 1px solid #78828a;*/
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+    .logout_div .btn-secondary {
+        background-color: #cdd3d8;
+        border-color: #cdd3d8;
+        color: #000000;
+        box-shadow: none !important;
+        padding:8px 25px;
+    }
+
+        .logout_div .btn-secondary:hover {
+            background-color: #cdd3d8 !important;
+            border-color: #cdd3d8 !important;
+            color: #666 !important;
+            box-shadow: none !important;
+        }
+/*Added by Amit*/
+.main-footer {
+    position: fixed;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.permissions-div, .content-container {
+    height: calc(100vh - 280px);
+}
+
+.cookie-alert {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    background-color: #264d96 !important;
+}
+
+.display-alert {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    border-radius: 0 !important;
+    background-color: #264d96 !important;
+}
+
+.cookie-alert .btn-secondary {
+    background-color: #cdd3d8;
+    border-color: #cdd3d8;
+    color: #000000;
+    box-shadow: none !important;
+}
+
+    .cookie-alert .btn-secondary:hover {
+        background-color: #cdd3d8 !important;
+        border-color: #cdd3d8 !important;
+        color: #666 !important;
+        box-shadow: none !important;
+    }
+.required_field {
+    font-size: 11px;
+    color: #ff0000;
+}
+.login-brand .logo-big {
+    padding-top: 0px!important;
+    text-align: center;
+}
+.brandlogo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    height: 80px;
+    width: 80px;
+}
+
+.display_dialog.alert {
+    height: 70px !important;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+.display_dialog.alert.alert-success, .display_dialog.alert.alert-danger, .display_dialog.alert.alert-warning {
+    background-color: #264d96 !important;
+    border-radius: 0;
+}
+.sidebar-menu .dropdown-menu li a.active {
+    color: #264d96!important;
+    font-weight: 600!important;
+}
+body {
+    overflow-x: hidden !important;   
+}
+
+.inside-modal {
+    display: block;
+    width: 100%;
+    text-align: center;
+    float: left;
+    clear: both;
+}
+
+.brandlogo.inside-modal-logo {
+    height: 40px;
+    width: 80px;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.close.position-absolute {
+    top: 0px;
+    right: 5px;
+    border: none;
+    background: no-repeat;
+    font-size: 20px;
+}
+
+.inside-modal-dialog {
+    top: 50%;
+    margin-top: -123px;
+}
+
+.alert-msg {
+    font-size: 16px;
+}
+
+.modal-title.alert-modal-title {
+    font-size: 22px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 410px;
+    }
+}
+/*New CSS added*/
+
+.roleManagement table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .roleManagement table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+.roleManagement table {
+    table-layout: fixed;
+}
+.roleManagement table thead tr th {
+    background: #001a50;
+    padding: 20px 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+    .roleManagement table thead tr th:first-child {
+        border-radius: 10px 0 0 0px !important;
+    }
+
+    .roleManagement table thead tr th:last-child {
+        border-radius: 0 10px 0px 0px !important;
+    }
+.roleManagement table tbody tr td {
+    padding: 25px 15px 15px;
+    font-size:15px;
+}
+    .roleManagement table thead tr {
+        display: block;
+        position: relative;
+    }
+
+    .roleManagement table tbody {
+        display: block;
+        overflow: auto;
+        width: 100%;
+        height: calc(100vh - 316px);
+    }
+        .roleManagement table tbody::-webkit-scrollbar {
+            width: 6px;
+            border-radius: 6px;
+            height: 0px;
+        }
+
+        .roleManagement table tbody::-webkit-scrollbar-track {
+            background-color: #F5F5F5;
+            border-radius: 6px;
+        }
+
+        .roleManagement table tbody::-webkit-scrollbar-thumb {
+            width: 6px;
+            background: #696969;
+            border-radius: 6px;
+            border: unset;
+        }
+
+        .roleManagement table tbody:hover {
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+/*.userManagement {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+    .userManagement table tbody {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        height: 330px;
+    }
+
+    .userManagement table thead tr {
+        display: block;
+    }
+*/
+
+.userManagementScroll {
+    overflow: auto;
+    height: calc(100vh - 300px);
+}
+    .userManagementScroll::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 6px;
+        height: 0px;
+    }
+
+    .userManagementScroll::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+        border-radius: 6px;
+    }
+
+    .userManagementScroll::-webkit-scrollbar-thumb {
+        width: 6px;
+        background: #696969;
+        border-radius: 6px;
+        margin-top: 60px !important;
+        border: unset;
+    }
+
+    .userManagementScroll:hover {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+/*.userManagement table {
+    border-collapse: collapse;
+    width: 100%;
+}
+    .userManagement table thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }*/
+.userManagement table thead tr th {
+    background: #001a50;
+    padding: 20px 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.userManagement table thead tr th:first-child {
+    border-radius: 10px 0 0 0px !important;
+}
+
+.userManagement table thead tr th:last-child {
+    border-radius: 0 10px 0px 0px !important;
+}
+
+.userManagement table tbody tr td {
+    padding: 25px 15px;
+    font-size: 15px;
+}
+.userManagement table tbody tr {
+    border-bottom: 1px solid #dedede;
+}
+
+.Module-box {
+    float: left;
+    margin-bottom: 10px;
+    font-size:13px;
+}
+.Profile {
+    background: #c5d0ea;
+    padding:8px;
+    margin-right:5px;
+    border-radius:3px;
+
+}
+.Users {
+    background: #B5C5EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Roles {
+    background: #B5CFEA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Permissions {
+    background: #B5D8EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Location {
+    background: #B5E1EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Location {
+    background: #B5E1EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Accounts {
+    background: #B5FAEA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Export {
+    background: #B5D3EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.Management {
+    background: #B5EAEA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Admin {
+    background: #EBE4BF;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Posting {
+    background: #B5D3E1;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.Legacy {
+    background: #B5D3EA;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.roleManagementEdit a{
+    text-decoration:none;
+    font-size:14px;
+    margin-right:8px;
+}
+    .roleManagementEdit a.EditRole {
+        color: #27ae60;
+        border-left: 1px solid #27ae60;
+        padding-left:10px;
+    }
+    .roleManagementEdit a.DeleteRole {
+        color: #eb5757;
+    }
+    .roleManagementEdit a.ManageUser {
+        color: #27ae60;
+        padding-right: 3px;
+    }
+    /*menu CSS*/
+#menu {
+    margin-top:15px;
+}
+
+    #menu ul, #menu li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #menu ul {
+        height: 45px
+    }
+
+    #menu li {
+        float: left;
+        display: inline;
+        position: relative;
+    }
+
+    #menu a {
+        display: block;
+        line-height: 45px;
+        padding: 0 15px 10px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: #131D33;
+        font-weight:500;
+    }
+    #menu a svg{
+        padding-right:5px;
+        margin-top:-2px;
+    }
+
+    #menu ul li a:hover {
+        color: #132333 !important;
+        border-bottom: 1.5px solid #001950;
+    }
+    #menu ul li a.active {
+        color: #132333 !important;
+        border-bottom: 1.5px solid #001950;
+    }
+
+    #menu input {
+        display: none;
+        margin: 0 0;
+        padding: 0 0;
+        width: 100%;
+        height: 45px;
+        opacity: 0;
+        cursor: pointer
+    }
+
+    #menu label {
+        font: bold 30px Arial;
+        display: none;
+        width: 35px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        color: #fff
+    }
+
+        #menu label span {
+            font-size: 13px;
+            position: absolute;
+            left: 35px
+        }
+
+    #menu ul li ul {
+        height: auto;
+        overflow: hidden;
+        position: absolute;
+        z-index: 99;
+        color: #333
+    }
+
+        #menu ul li ul li a {
+            color: #333;
+            width: 220px;
+            height: 45px;
+            line-height: 35px;
+            background: #e6e8ee;
+            border-radius: 3px;
+            border-bottom: none;
+            font-size: 0.9rem;
+            padding-top: 5px;
+        }
+        #menu ul li ul li a:hover {
+            border-bottom:none;
+        }
+            #menu ul li ul li a svg {
+            padding-right:5px
+        }
+            #menu a.prett {
+        padding: 0 27px 10px 15px
+    }
+
+        #menu a.prett::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-width: 6px 5px;
+            border-style: solid;
+            border-color: #ccc transparent transparent transparent;
+            position: absolute;
+            top: 20px;
+            right: 9px
+        }
+
+        #menu a.prett:hover::after, #menu ul li:hover a.prett::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-width: 6px 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+            position: absolute;
+            top: 20px;
+            right: 9px
+        }
+
+    #menu ul li ul li a:hover {
+        background: #ffffff;
+    }
+
+@media screen and (max-width: 600px) {
+    #menu {
+        position: relative
+    }
+
+        #menu ul {
+            background: #838383;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: 3;
+            height: auto;
+            display: none;
+        }
+
+            #menu ul.menus {
+                width: 100%;
+                position: static;
+                border: none
+            }
+
+        #menu li {
+            display: block;
+            float: none;
+            width: auto;
+            text-align: left
+        }
+
+            #menu li a {
+                color: #fff
+            }
+
+                #menu li a:hover {
+                    color: #333
+                }
+
+            #menu li:hover {
+                background: #BABABA;
+                color: #333;
+            }
+
+                #menu li:hover > a.prett, #menu a.prett:hover {
+                    background: #BABABA;
+                    color: #333;
+                }
+
+        #menu ul.menus a {
+            background: #BABABA;
+        }
+
+            #menu ul.menus a:hover {
+                background: #fff;
+            }
+
+        #menu input, #menu label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block
+        }
+
+        #menu input {
+            z-index: 4;
+        }
+
+        #menu ul li ul li a {
+            width: 100%;
+        }
+}
+
+
+/*Left sied popup*/
+.content {
+    width: 450px;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#wrap {
+    position: absolute;
+    right: -23px;
+    top: -85px;
+    display: none;
+    z-index:999;
+}
+
+.open-call {
+    /*padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 100px;*/
+}
+
+.close-call {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#wrap .content h1 {
+    color: #132333;
+    font-size: 18px;
+    font-weight: 600;
+}
+#wrap .content h3 {
+    color: #132333;
+    font-size: 18px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#wrap .content label {
+    color: #132333;
+    font-size: 15px;
+}
+
+/*Checkbox CSS*/
+.checkboContainer {
+    width: fit-content;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .checkboContainer input {
+        display: none;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    border: 1px solid #001950;
+    background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboContainer:hover input ~ .checkmark {
+    background-color: gainsboro;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboContainer input:checked ~ .checkmark {
+    background-color: #001950;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboContainer .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkboxDiv{
+    padding:0px;
+    margin-bottom:10px;
+}
+.subCheckbox{
+    margin-left:30px;
+}
+.subSubCheckbox{
+   margin-left:25px;
+}
+.fill-gradient {
+    background-color: #06397c;
+    border: 2px solid #06397c;
+    color: #fff;
+    padding: 8px 25px;
+}
+    .fill-gradient:hover {
+        border: 2px solid #06397c;
+        background-color: transparent;
+    }
+.delete-gradient {
+    background-color: #eb5757;
+    border: 2px solid #eb5757;
+    color: #fff;
+    padding: 8px 25px;
+}
+
+    .delete-gradient:hover {
+        border: 2px solid #eb5757;
+        color: #eb5757;
+        background-color: transparent;
+    }
+.text-right{
+    text-align:right;
+}
+
+
+
+
+
+
+/* Absolute Center Spinner */
+.loading {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+    /* Transparent Overlay */
+    .loading:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(rgba(20, 20, 20,.8), rgba(0, 0, 0, .8));
+        background: -webkit-radial-gradient(rgba(20, 20, 20,.8), rgba(0, 0, 0,.8));
+    }
+
+    /* :not(:required) hides these rules from IE9 and below */
+    .loading:not(:required) {
+        /* hide "loading..." text */
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+    }
+
+        .loading:not(:required):after {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 150ms infinite linear;
+            -moz-animation: spinner 150ms infinite linear;
+            -ms-animation: spinner 150ms infinite linear;
+            -o-animation: spinner 150ms infinite linear;
+            animation: spinner 150ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+            box-shadow: rgba(255,255,255, 0.75) 1.5em 0 0 0, rgba(255,255,255, 0.75) 1.1em 1.1em 0 0, rgba(255,255,255, 0.75) 0 1.5em 0 0, rgba(255,255,255, 0.75) -1.1em 1.1em 0 0, rgba(255,255,255, 0.75) -1.5em 0 0 0, rgba(255,255,255, 0.75) -1.1em -1.1em 0 0, rgba(255,255,255, 0.75) 0 -1.5em 0 0, rgba(255,255,255, 0.75) 1.1em -1.1em 0 0;
+        }
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.dashboard-submenu {
+    width: 100%;text-align: right;
+}
+    .dashboard-submenu button {
+        text-decoration: none;
+        color: #04397D;
+        font-size:15px;
+        font-weight:500;
+    }
+        .dashboard-submenu button:hover {
+            text-decoration: none;
+            color: #0255C0;
+        }
+
+.userSubTable{
+    border-bottom:none !important;
+    margin-bottom:0px;
+}
+    .userSubTable tbody tr {
+        border-bottom: 1px solid #dedede !important;
+    }
+        .userSubTable tbody tr:last-child {
+            border-bottom: none !important;
+        }
+
+        .userSubTable tbody tr td:first-child {
+            padding-left: 0px !important;
+        }
+.light-blue {
+    padding: 37px 12px!important;
+}
+.subRoleNae {
+    width: 34%;
+}
+
+.subLocationName {
+    width: 40.4%;
+}
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+    .subRoleNae {
+        width: 30%;
+    }
+    .subLocationName {
+        width: 40%;
+    }
+    #menu a{
+        font-size:12px;
+    }
+    #menu ul li ul li a {
+        font-size: 12px;
+    }
+    .main-menuSub {
+        width: 78%;
+        margin-top: 0px !important;
+    }
+    .modulesWidth{
+        width:65%;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1380px) {
+    .subRoleNae {
+        width: 32.5%;
+    }
+
+    .subLocationName {
+        width: 41.3%;
+    }
+    .modulesWidth {
+        width: 72.5%;
+    }
+}
+@media screen and (min-width: 1381px) and (max-width:1500px) {
+    .subRoleNae {
+        width: 33%;
+    }
+
+    .subLocationName {
+        width: 42.4%;
+    }
+    .modulesWidth {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1501px) and (max-width:1600px) {
+    .subRoleNae {
+        width: 33.5%;
+    }
+
+    .subLocationName {
+        width: 43%;
+    }
+    .modulesWidth {
+        width: 76%;
+    }
+}
+@media screen and (min-width: 1601px) and (max-width:1750px) {
+    .subRoleNae {
+        width: 35.5%;
+    }
+
+    .subLocationName {
+        width: 43.5%;
+    }
+    .modulesWidth {
+        width: 79%;
+    }
+}
+@media screen and (min-width: 1751px) and (max-width:2000px) {
+    .subRoleNae {
+        width: 35.5%;
+    }
+
+    .subLocationName {
+        width: 45%;
+    }
+    .modulesWidth {
+        width: 80%;
+    }
+}
+.btn{
+    font-size:15px !important;
+}
+.subTableTdPadding {
+    padding: 0px 15px !important;
+}
+h4{
+    font-size:20px !important;
+    font-weight:600;
+}
+
+.fileuploadbtn button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FAFAFA;
+    background: #06397c;
+    border-radius: 8px;
+    padding: 8px 28px;
+    border: 1px solid #06397c;
+    transition: all ease 0.3s 0s;
+    display: inline-block;
+    outline: none;
+    float:left;
+    margin-right:5px;
+}
+
+    .fileuploadbtn button:hover {
+        background: transparent;
+        color: #06397c;
+        border: 1px solid #06397c;
+    }
+#custom-text {
+    float: left;
+    width: 65%;
+    padding-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.deleteFile {
+    position: absolute;
+    right: 48px;
+    color: #eb5757;
+}
+    .deleteFile:hover {
+        color: #EB7557;
+    }
+.deleteProfile {
+    position: absolute;
+    margin-left: 77px;
+    color: #eb5757;
+}
+
+    .deleteProfile:hover {
+        color: #EB7557;
+    }
+.fileuploadProfile {
+    margin: 10px auto;
+    float: left;
+    width: 100%;
+    padding-left: 20%;
+}
+.removeIcon{
+    padding-top:1.5rem;
+}
+.linkremove {
+    color: #EB7557;
+    cursor:pointer;
+    font-size:20px;
+    margin-right:5px;
+}
+.linkadd {
+    color: #27ae60;
+    cursor: pointer;
+    font-size:20px;
+}
+
+.form-search-group {
+    display: inline-block;
+    position: relative;
+    margin-right:10px;
+}
+    .form-search-group button i {
+        color: #06397c;
+    }
+.form-search-group input {
+    height:43px;
+    width:280px;
+    padding-right:45px;
+}
+.searchIconRoles {
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    border: none;
+    background: transparent;
+}
+.searchCloseIcon {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    border: none;
+    background: transparent;
+}
+.searchCloseIcon i{
+    color:#eb5757 !important;
+}
